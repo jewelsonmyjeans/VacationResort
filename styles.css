@@ -6,3 +6,9 @@ body {
 a, a:hover {
     color: #113946;
 }
+
+main {
+    background-color: #EAD7BB;
+    border-radius: 10px;
+    margin: 2em;
+}
