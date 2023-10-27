@@ -55,18 +55,17 @@ function calculateRoomCost() {
   let discountAmount = 1;
   if (discount.value === "senior") {
     discountAmount = 0.9;
-    discountPercentage = 10
+    discountPercentage = 10;
   } else if (discount.value === "military") {
     discountAmount = 0.8;
-    discountPercentage = 20
+    discountPercentage = 20;
   } else {
-    discountAmount = 1
-    discountPercentage = 0
+    discountAmount = 1;
+    discountPercentage = 0;
   }
 
-  
   const discountedRoomCost = originalRoomCost * discountAmount;
-  const tax =  discountedRoomCost * 0.12;
+  const tax = discountedRoomCost * 0.12;
 
   const totalCost = discountedRoomCost + tax;
 
