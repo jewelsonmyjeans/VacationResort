@@ -9,7 +9,7 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-    <link href="styles.css" rel="stylesheet" />
+    <link href="./styles.css" rel="stylesheet" />
     <title>Vacation Resort</title>
   </head>
   <body>
@@ -18,7 +18,7 @@
       <li class="nav-item">
         <a
           href="./index.html"
-          class="nav-link active"
+          class="nav-link"
           data-bs-toggle="tab"
           aria-current="page"
           >Home</a
@@ -27,7 +27,7 @@
       <li class="nav-item">
         <a
           href="./overnightstay.html"
-          class="nav-link"
+          class="nav-link active"
           data-bs-toggle="tab"
           aria-current="page"
           >Overnight Stay</a
@@ -49,29 +49,46 @@
     </ul>
 
     <main class="container">
-      <div class="text-center container">
-        <h1>Japan Vacation Resort Planner</h1>
-        <h4>Plan your get away to Japan now with our easy to use planner!</h4>
-        <img
-          src="https://afar.brightspotcdn.com/dims4/default/55b4d7f/2147483647/strip/true/crop/1357x720+41+0/resize/1440x764!/quality/90/?url=https%3A%2F%2Fafar-media-production-web.s3.us-west-2.amazonaws.com%2Fbrightspot%2Fcf%2F8a%2F20b4a2c544a58be93512ad67084c%2Fbohler-japankk-4006.jpg"
-          width="75%"
-        />
-
-        <div>
-          <p>
-            There's a certain allure to Japan - a place where eastern tradition
-            and western modernity collide among otherworldly scenery that'll
-            take your breath away and refuse to give it back. Add mouthwatering
-            cuisine, a fascinating history, and a multifaceted culture into the
-            mix and it's easy to understand how Japan continues to captivate
-            travelers. From enjoying a sake tasting at a local brewery and
-            soaking in a steaming hot onsen to marveling at World
-            Heritage-listed temples thousands of years old, our tours in Japan
-            promise the ultimate adventure: one you'll continue to think about
-            long after you return home.
-          </p>
-        </div>
-      </div>
+        <form>
+            <div class="form-group">
+                <label>Name:</label>
+                <input type="text" name="" id="" class="form-control" />
+            </div>
+            <div>
+                <label>Email:</label>
+                <input type="email" name="" id="" class="form-control" />
+            </div>
+            <div>
+                <label>Check-in date:</label>
+                <input type="date" name="" id="" />
+            </div>
+            <div>
+                <label>Number of nights for visit (1-28) days:</label
+                ><input type="number" name="" id="" class="form-control" min="1" max="28" />
+            </div>
+            <div>
+                <label>Select a room type:</label>
+            <br>
+                <input type="radio" name="roomType" id="queenRoom" /><label for="queenRoom">Queen</label>
+                <input type="radio" name="roomType" id="kingRoom" /><label for="kingRoom">King</label>
+                <input type="radio" name="roomType" id="twoBed" /><label for="twoBed">2-Bedroom Suite</label>
+            </div>
+            <div>
+                <label>Number of adults (1-4):</label
+                ><input type="number" name="" id="" class="form-control" min="1" max="4" />
+            </div>
+            <div>
+                <label>Number of children (0-4):</label
+                ><input type="number" name="" id="" class="form-control" min="0" max="4" />
+            </div>
+            <div>
+                <label>Discounts:</label>
+                <input type="radio" name="discount" id=""><label>None</label>
+                <input type="radio" name="discount" id=""><label>Senior</label>
+                <input type="radio" name="discount" id=""><label>Military</label>
+            </div>
+            <input type="button" value="Submit" class="btn btn-primary">
+        </form>
     </main>
 
     <script
